@@ -1,8 +1,8 @@
 # shopee-api-g-sheets
-## tool: id2info
+## Tool: id2info
 ### 使用時機
 當已知shop_id 及 item_id，需要撈出商品品牌名稱、商品售價、商品是否仍有庫存時可使用
-### usage
+### Usage
 * Find desired info by google app script in google sheets through shopee's api.
 * Modify the column/row index in the script.
 * [Tools] --> [Script editor] --> paste and run
@@ -25,7 +25,7 @@
     * 依照資料的多寡會需要不同時間等待資料跑出來，1秒約1筆
     * 若過多次處存取，會被蝦皮網站擋住，此時若資料還沒抓完，則需等一下並調整「資料從哪一列開始讀取：`var seen_start_row` =」這個欄位的開始欄數
 
-### shopee api and json
+### Shopee API and JSON
 You may use  
     https://jsonformatter.org/  
 to know the hierarchy of json from example like    
@@ -37,10 +37,11 @@ In the demo sheet, info such as below are shown.
 * min price
 * max price
 * item status (out-of-stock)
-### trouble shooting
+### Trouble shooting
 * Frequent access to the api may cause interruption while running the program. To avoid redundancy, remember to resume from an unprocessed row.
 * The G Suite limits each execution to 30 min. Approximately, each row consumes 1 sec if calling api. To avoid redundancy, remember to resume from an unprocessed row. For more about the limits or quota, please see 
-## tool: url2id
+
+## Tool: url2id
 ### 使用時機
 當已知商品URL，需要撈出商品shop_id和item_id時可使用
 ### 使用步驟
