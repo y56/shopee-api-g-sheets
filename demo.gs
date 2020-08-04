@@ -11,6 +11,7 @@ function myFunction() {
   var seen_target_brand_col = 'A'; // 想要把品牌寫到這個column
   var seen_target_price_min_col = 'B'; // 想要把最低價寫到這個column
   var seen_target_price_max_col = 'C'; // 想要把最高價寫到這個column
+  var seen_target_item_status_col = 'D'; // 想要把寫到這個column  // !!
 //======================================================================
   
   var sheet = SpreadsheetApp.getActiveSheet();
@@ -23,6 +24,9 @@ function myFunction() {
   var target_brand_col = letter2index(seen_target_brand_col);
   var target_price_min_col = letter2index(seen_target_price_min_col);
   var target_price_max_col = letter2index(seen_target_price_max_col);
+  
+  
+  var target_item_status_col = letter2index(seen_target_item_status_col);  // !!
   
   for (var i = start_row; i < end_row + 1; i++) {
     // if blank, break
@@ -77,6 +81,11 @@ function myFunction() {
       sheet.getRange(i + 1, target_price_max_col + 1).setValue(json.item.price_max/100000);
     } else { // if fail, color it
       sheet.getRange(i + 1, target_price_max_col + 1).setBackground("red");
+    }
+    if (json.item.item_status != '' && json.item.item_status != 0 && json.item.item_status != '0' && json.item.item_status != null){
+      sheet.getRange(i + 1, target_item_status_col + 1).setValue(json.item.item_status);
+    } else { // if fail, color it
+      sheet.getRange(i + 1, target_item_status_col + 1).setBackground("red");
     }
   } 
 }
