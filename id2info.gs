@@ -1,8 +1,5 @@
 function myFunction() {
-// Use
-//    https://jsonformatter.org/
-// to find the info you want at 
-//    https://shopee.tw/api/v2/item/get?itemid=1524062473&shopid=5453670
+  
 //======================================================================
   var seen_shopid_col = 'E'; // shop id的 column index // starting from A
   var seen_itemid_col = 'F'; // item id網址的 column index // starting from A
@@ -48,11 +45,6 @@ function myFunction() {
       sheet.getRange(i + 1, target_brand_col + 1).setBackground("red");
       continue;
     }
-    // Use
-    //    https://jsonformatter.org/
-    // to find the info you want at 
-    //    https://shopee.tw/api/v2/item/get?itemid=1524062473&shopid=5453670
-    
     // for brand
     // try to get info from json.item.attributes
     var item_list = json.item.attributes.filter(function(x) {
@@ -80,6 +72,7 @@ function myFunction() {
     } else { // if fail, color it
       sheet.getRange(i + 1, target_price_max_col + 1).setBackground("red");
     }
+   // for in stock/out of stock
     if (json.item.item_status != '' && json.item.item_status != 0 && json.item.item_status != '0' && json.item.item_status != null){
       sheet.getRange(i + 1, target_item_status_col + 1).setValue(json.item.item_status);
     } else { // if fail, color it
