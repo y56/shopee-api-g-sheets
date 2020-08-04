@@ -12,7 +12,7 @@
 3. Script.google.com 畫面跳出後，將程式碼複製貼上到 Code.js 欄位，並修改前面夾在虛線之間的欄位字母編號與行列數字編號
 4. 先告訴程式碼要讀取資料的位置在哪
     * Shop ID 在資料名單的哪一欄：`var seen_shopid_col = 'G'; // shop id的 column index // starting from A`
-    * Item ID 在資料名單的哪一欄：`var seen_itemid_col = 'C'; // item id網址的 column index // starting from A`
+    * Item ID 在資料名單的哪一欄：`var seen_itemid_col = 'C'; // item id的 column index // starting from A`
     * 資料從哪一列開始讀取：`var seen_start_row = 2; // 第一個網址的 row index // starting from 1`
     * 資料從哪一列結束讀取：`var seen_end_row = 88; // 最後一個商品的 row index // 超過沒關係`
 5. 再告訴程式碼找完資料後要放哪（同一個分頁的哪一欄）
