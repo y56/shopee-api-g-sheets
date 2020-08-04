@@ -21,3 +21,4 @@ In the demo sheet, info such as below are shown.
 
 ## trouble shooting
 * Frequent access to the api may cause interruption while running the program. To avoid redundancy, remember to resume from an unprocessed row.
+* The G Suite limits each execution to 30 min. Approximately, each row consumes 1 sec if calling api. To avoid redundancy, remember to resume from an unprocessed row. For more about the limits or quota, please see 
