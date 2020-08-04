@@ -48,7 +48,7 @@ In the demo sheet, info such as below are shown.
 1. 打開需要撈出資料名單的Google Sheet（商品名單必須包含URL）
 2. 按工具欄第七個「Tool」的第二個「<> Script editor」
 
-  <img src="https://i.imgur.com/xRzmVU7.png"/>  
+  <img src="https://i.imgur.com/xRzmVU7.png" width="250" height="200" />
 
 3. Script.google.com 畫面跳出後，將程式碼複製貼上到 Code.js 欄位，並修改前面夾在虛線之間的欄位字母編號與行列數字編號
 
