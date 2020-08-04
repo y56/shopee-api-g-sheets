@@ -4,8 +4,8 @@ function myFunction() {
 // to find the info you want at 
 //    https://shopee.tw/api/v2/item/get?itemid=1524062473&shopid=5453670
 //======================================================================
-  var seen_shopid_col = 'D'; // shop id的 column index // starting from A
-  var seen_itemid_col = 'E'; // item id網址的 column index // starting from A
+  var seen_shopid_col = 'E'; // shop id的 column index // starting from A
+  var seen_itemid_col = 'F'; // item id網址的 column index // starting from A
   var seen_start_row = 2; // 第一個網址的 row index // starting from 1
   var seen_end_row = 7; // 最後一個商品的 row index // 超過沒關係
   var seen_target_brand_col = 'A'; // 想要把品牌寫到這個column
