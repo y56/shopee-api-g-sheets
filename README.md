@@ -44,7 +44,7 @@ In the demo sheet, info such as below are shown.
 ### 使用時機
 當已知商品URL，需要撈出商品shop_id和item_id時可使用
 ### 使用步驟
-好讀google doc版本: https://docs.google.com/document/d/1uKt193OX3M5g_r3KIbM5EccIpPL-iy9r1TobMoVE8Cs/edit?usp=sharing
+好讀google doc版本 by Hallie Shiao: https://docs.google.com/document/d/1uKt193OX3M5g_r3KIbM5EccIpPL-iy9r1TobMoVE8Cs/edit?usp=sharing
 1. 打開需要撈出資料名單的Google Sheet（商品名單必須包含URL）
 2. 按工具欄第七個「Tool」的第二個「<> Script editor」
 
