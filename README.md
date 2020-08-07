@@ -1,7 +1,11 @@
 # shopee-api-g-sheets
 ## Tool: id2info
 ### 使用時機
-當已知shop_id 及 item_id，需要撈出商品品牌名稱、商品售價、商品是否仍有庫存時可使用
+當已知shop_id 及 item_id，需要撈出
+* 商品品牌名稱
+* 商品售價
+* 商品是否仍有庫存
+* 產品名稱
 ### Usage
 * Find desired info by google app script in google sheets through shopee's api.
 * Modify the column/row index in the script.
