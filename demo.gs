@@ -9,6 +9,7 @@ function myFunction() {
   var seen_target_price_min_col = 'B'; // 想要把最低價寫到這個column
   var seen_target_price_max_col = 'C'; // 想要把最高價寫到這個column
   var seen_target_item_status_col = 'D'; // 想要把是庫存狀態寫到這個column
+  var seen_target_item_name_col = 'I'; // 想要把產品名寫到這個column
 //======================================================================
   
   var sheet = SpreadsheetApp.getActiveSheet();
@@ -22,6 +23,7 @@ function myFunction() {
   var target_price_min_col = letter2index(seen_target_price_min_col);
   var target_price_max_col = letter2index(seen_target_price_max_col);
   var target_item_status_col = letter2index(seen_target_item_status_col); 
+  var target_item_name_col = letter2index(seen_target_item_name_col);
   
   for (var i = start_row; i < end_row + 1; i++) {
     // if blank, break
@@ -77,6 +79,12 @@ function myFunction() {
       sheet.getRange(i + 1, target_item_status_col + 1).setValue(json.item.item_status);
     } else { // if fail, color it
       sheet.getRange(i + 1, target_item_status_col + 1).setBackground("red");
+    }
+    // for 產品名
+    if (json.item.name != '' && json.item.name != 0 && json.item.name != '0' && json.item.name != null){
+      sheet.getRange(i + 1, target_item_name_col + 1).setValue(json.item.name);
+    } else { // if fail, color it
+      sheet.getRange(i + 1, target_item_name_col + 1).setBackground("red");
     }
   } 
 }
