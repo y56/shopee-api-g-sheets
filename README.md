@@ -30,10 +30,10 @@
     * 若過多次處存取，會被蝦皮網站擋住，此時若資料還沒抓完，則需等一下並調整「資料從哪一列開始讀取：`var seen_start_row` =」這個欄位的開始欄數
 
 ### Shopee API and JSON
-You may use  
+To know the hierarchy of json. For example, copy the content of  
+    https://shopee.tw/api/v2/item/get?itemid=1913016333&shopid=81844674  
+and paste into   
     https://jsonformatter.org/  
-to know the hierarchy of json from example like    
-    https://shopee.tw/api/v2/item/get?itemid=1913016333&shopid=81844674
 ### Demo
 https://docs.google.com/spreadsheets/d/1AOl1VAVnBFFFm539DNfhQbSR-CX3vxvUy3r5D8oZgUM/edit?usp=sharing  
 In the demo sheet, info such as below are shown. 
