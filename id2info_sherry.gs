@@ -3,14 +3,15 @@ function myFunction2() {
 //======================================================================
   var seen_shopid_col = 'C'; // shop id的 column index // starting from A
   var seen_itemid_col = 'D'; // item id網址的 column index // starting from A
-  var seen_start_row = 506; // 第一個網址的 row index // starting from 1
-  var seen_end_row = 507; // 最後一個商品的 row index // 超過沒關係
+  var seen_start_row = 2; // 第一個網址的 row index // starting from 1
+  var seen_end_row = 526; // 最後一個商品的 row index // 超過沒關係
   var seen_target_brand_col = 'F'; // 想要把品牌寫到這個column
   var seen_target_price_min_col = 'J'; // 想要把最低價寫到這個column
   var seen_target_price_max_col = 'I'; // 想要把最高價寫到這個column
   var seen_target_item_status_col = 'S'; // 想要把是庫存狀態寫到這個column
   var seen_target_item_name_col = 'G'; // 想要把產品名寫到這個column
   var seen_target_price_before_discount_col = 'H'; // 原價
+  var seen_target_normal_stock_col = 'M'; // 庫存量
 //======================================================================
   
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("shopee product list(未完)");
@@ -26,6 +27,7 @@ function myFunction2() {
   var target_item_status_col = letter2index(seen_target_item_status_col); 
   var target_item_name_col = letter2index(seen_target_item_name_col);
   var target_price_before_discount_col = letter2index(seen_target_price_before_discount_col);
+  var target_normal_stock_col = letter2index(seen_target_normal_stock_col);
   
   for (var i = start_row; i < end_row + 1; i++) {
     // if blank, break
@@ -103,6 +105,13 @@ function myFunction2() {
     } else { // if fail, color it
       sheet.getRange(i + 1, target_price_before_discount_col + 1).setBackground("red");
     }
+    // for 庫存量
+    if (json.item.normal_stock != '' && json.item.normal_stock != 0 && json.item.normal_stock != '0' && json.item.normal_stock != null){
+      sheet.getRange(i + 1, target_normal_stock_col + 1).setValue(json.item.normal_stock);
+    } else { // if fail, color it
+      sheet.getRange(i + 1, target_normal_stock_col + 1).setBackground("red");
+    }
+    target_normal_stock_col
   } 
 }
 function letter2index(seen_letters) {
