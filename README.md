@@ -3,7 +3,8 @@
 ### 使用時機
 當已知shop_id 及 item_id，需要撈出
 * 商品品牌名稱
-* 商品售價
+* 折扣前價格
+* 商品售價 (最高價與最低價)
 * 商品是否仍有庫存
 * 產品名稱
 ### Usage
@@ -36,6 +37,7 @@ and paste into
     https://jsonformatter.org/  
 ### Demo
 https://docs.google.com/spreadsheets/d/1AOl1VAVnBFFFm539DNfhQbSR-CX3vxvUy3r5D8oZgUM/edit?usp=sharing  
+
 In the demo sheet, info such as below are shown. 
 * brand name
 * min price
