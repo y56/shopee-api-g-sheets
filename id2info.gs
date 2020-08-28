@@ -1,15 +1,15 @@
 function myFunction() {
   
 //======================================================================
-  var seen_shopid_col = 'E'; // shop id的 column index // starting from A
-  var seen_itemid_col = 'F'; // item id網址的 column index // starting from A
+  var seen_shopid_col = 'A'; // shop id的 column index // starting from A
+  var seen_itemid_col = 'B'; // item id網址的 column index // starting from A
   var seen_start_row = 2; // 第一個網址的 row index // starting from 1
   var seen_end_row = 7; // 最後一個商品的 row index // 超過沒關係
-  var seen_target_brand_col = 'A'; // 想要把品牌寫到這個column
-  var seen_target_price_min_col = 'B'; // 想要把最低價寫到這個column
-  var seen_target_price_max_col = 'C'; // 想要把最高價寫到這個column
-  var seen_target_item_status_col = 'D'; // 想要把是庫存狀態寫到這個column
-  var seen_target_item_name_col = 'I'; // 想要把產品名寫到這個column
+  var seen_target_brand_col = 'C'; // 想要把品牌寫到這個column
+  var seen_target_price_min_col = 'D'; // 想要把最低價寫到這個column
+  var seen_target_price_max_col = 'E'; // 想要把最高價寫到這個column
+  var seen_target_item_status_col = 'F'; // 想要把是庫存狀態寫到這個column
+  var seen_target_item_name_col = 'G'; // 想要把產品名寫到這個column
 //======================================================================
   
   var sheet = SpreadsheetApp.getActiveSheet();
