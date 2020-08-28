@@ -36,7 +36,9 @@ To know the hierarchy of json. For example, copy the content of
 and paste into   
     https://jsonformatter.org/  
 ### Demo
-https://docs.google.com/spreadsheets/d/1AOl1VAVnBFFFm539DNfhQbSR-CX3vxvUy3r5D8oZgUM/edit?usp=sharing  
+https://docs.google.com/spreadsheets/d/1AOl1VAVnBFFFm539DNfhQbSR-CX3vxvUy3r5D8oZgUM/edit?usp=sharing
+or
+https://docs.google.com/spreadsheets/d/1e0VBsYXsABDD4lhfava6b_cDWYzpbpMRTgW3oFSWbdk/edit?usp=sharing
 
 In the demo sheet, info such as below are shown. 
 * brand name
