@@ -52,9 +52,12 @@ In the demo sheet, info such as below are shown.
 ## Tool: url2id.gs 用URL換ID
 ### 使用時機
 當已知商品URL，需要撈出商品shop_id和item_id時可使用
-比如說網址帳這樣
+比如說網址長這樣
 https://shopee.tw/Aprica-SMOOOVE-ISOFIX-專用提籃底座-黑諾【麗兒采家】-i.49937260.3117951278
 那最後的兩個數字是shop_id和item_id
+
+DEMO:  
+https://docs.google.com/spreadsheets/d/1eU_FQedCiRebDXD8if4qxHTfZI4QD6ktZ8w5_zGzbzw/edit?usp=sharing
 
 ### 使用步驟
 好讀google doc版本 by Hallie Shiao: https://docs.google.com/document/d/1uKt193OX3M5g_r3KIbM5EccIpPL-iy9r1TobMoVE8Cs/edit?usp=sharing
