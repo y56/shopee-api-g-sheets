@@ -80,6 +80,6 @@ https://shopee.tw/Aprica-SMOOOVE-ISOFIX-專用提籃底座-黑諾【麗兒采家
 6. 依照資料的多寡會需要不同時間等待資料跑出來，一分鐘約300筆
 7. 若過多次處存取，會被蝦皮網站擋住，此時若資料還沒抓完，則需等一下並調整「資料從哪一列開始讀取：var seen_start_row =」這個欄位的開始欄數
 
-## Tool: 找同一個ID中分數最大的
+## Tool: find-max.gs 找同一個ID中分數最大的
 DEMO:
 https://docs.google.com/spreadsheets/d/1VqnKjYOMA0qLLyZ0KqHnJ0ku3MwVH8-RiqD8nRnessQ/edit?usp=sharing
