@@ -52,6 +52,10 @@ In the demo sheet, info such as below are shown.
 ## Tool: url2id 用URL換ID
 ### 使用時機
 當已知商品URL，需要撈出商品shop_id和item_id時可使用
+比如說網址帳這樣
+https://shopee.tw/Aprica-SMOOOVE-ISOFIX-專用提籃底座-黑諾【麗兒采家】-i.49937260.3117951278
+那最後的兩個數字是shop_id和item_id
+
 ### 使用步驟
 好讀google doc版本 by Hallie Shiao: https://docs.google.com/document/d/1uKt193OX3M5g_r3KIbM5EccIpPL-iy9r1TobMoVE8Cs/edit?usp=sharing
 1. 打開需要撈出資料名單的Google Sheet（商品名單必須包含URL）
@@ -75,3 +79,7 @@ In the demo sheet, info such as below are shown.
 5. 第一次使用會需要 shopee.com 的授權，按下同意即可
 6. 依照資料的多寡會需要不同時間等待資料跑出來，一分鐘約300筆
 7. 若過多次處存取，會被蝦皮網站擋住，此時若資料還沒抓完，則需等一下並調整「資料從哪一列開始讀取：var seen_start_row =」這個欄位的開始欄數
+
+## Tool: 找同一個ID中分數最大的
+DEMO:
+https://docs.google.com/spreadsheets/d/1VqnKjYOMA0qLLyZ0KqHnJ0ku3MwVH8-RiqD8nRnessQ/edit?usp=sharing
