@@ -1,5 +1,5 @@
 # shopee-api-g-sheets
-## Tool: id2info 用ID換資訊
+## Tool: id2info.gs 用ID換資訊
 ### 使用時機
 當已知shop_id 及 item_id，需要撈出
 * 商品品牌名稱
@@ -49,7 +49,7 @@ In the demo sheet, info such as below are shown.
 * Frequent access to the api may cause interruption while running the program. To avoid redundancy, remember to resume from an unprocessed row.
 * The G Suite limits each execution to 30 min. Approximately, each row consumes 1 sec if calling api. To avoid redundancy, remember to resume from an unprocessed row. For more about the limits or quota, please see https://developers.google.com/apps-script/guides/services/quotas
 
-## Tool: url2id 用URL換ID
+## Tool: url2id.gs 用URL換ID
 ### 使用時機
 當已知商品URL，需要撈出商品shop_id和item_id時可使用
 比如說網址帳這樣
