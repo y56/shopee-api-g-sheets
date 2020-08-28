@@ -83,3 +83,7 @@ https://shopee.tw/Aprica-SMOOOVE-ISOFIX-專用提籃底座-黑諾【麗兒采家
 ## Tool: find-max.gs 找同一個ID中分數最大的
 DEMO:
 https://docs.google.com/spreadsheets/d/1VqnKjYOMA0qLLyZ0KqHnJ0ku3MwVH8-RiqD8nRnessQ/edit?usp=sharing
+
+## Tool: ranker.gs 排名
+DEMO:
+https://docs.google.com/spreadsheets/d/19ZJxUfgyyiD4s2D0wgJABgU89M0WfZJ1DhNppy6h2NM/edit?usp=sharing
